@@ -10,6 +10,7 @@
 html, body {
     width: 100%;
     height: 100%;
+    overflow: overlay;
 }
 
 :root {
@@ -32,11 +33,12 @@ body {
 }
 
 main {
-    
+    margin-block:2rem;
     width: 40rem;
     max-width: 45rem;
     margin-inline:auto;
-    height: 55rem;
+    height: 70rem;
+    max-height: 75rem;
     color: var(--cinza);
     padding: 5rem;
     background: var(--marrom-escuro);
@@ -74,6 +76,12 @@ input, .formSelect {
     
 }
 
+h1 {
+    padding: 2rem;
+    margin-top:4rem;
+
+}
+
 p {
     font-size: 1.8rem;
     margin: 0.5rem;
@@ -94,22 +102,20 @@ button {
     color: var(--cinza);
     transition: 0.3s ease-out;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 
 button:hover {
     background-color: var(--marrom-escuro);
     color: white;
-
-    box-shadow:
-  1.4px 4.8px 1.9px rgba(0, 0, 0, 0.021),
-  3.3px 11.2px 4.3px rgba(0, 0, 0, 0.03),
-  6px 20px 7.7px rgba(0, 0, 0, 0.037),
-  10px 33.2px 12.8px rgba(0, 0, 0, 0.043),
-  16.4px 54.8px 21.2px rgba(0, 0, 0, 0.05),
-  28.7px 95.7px 37px rgba(0, 0, 0, 0.059),
-  62px 207px 80px rgba(0, 0, 0, 0.08)
-;
+    box-shadow: 1.4px 4.8px 1.9px rgba(0, 0, 0, 0.021),
+                3.3px 11.2px 4.3px rgba(0, 0, 0, 0.03),
+                6px 20px 7.7px rgba(0, 0, 0, 0.037),
+                10px 33.2px 12.8px rgba(0, 0, 0, 0.043),
+                16.4px 54.8px 21.2px rgba(0, 0, 0, 0.05),
+                28.7px 95.7px 37px rgba(0, 0, 0, 0.059),
+                62px 207px 80px rgba(0, 0, 0, 0.08);
 
 }
 
@@ -118,9 +124,20 @@ footer {
     display: block;
     margin-inline: auto;
     margin-block:4rem;
-    
-    
+ 
+
+}
 
 
+
+::-webkit-scrollbar-track {
+    background-color: var(--marrom-escuro);
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: var(--marrom-claro);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--marrom-cacau);
 }
 
